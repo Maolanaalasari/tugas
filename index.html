@@ -1,0 +1,346 @@
+<IDOCTYPE html>
+  <html>
+    <head>
+      <title>latihan membuat halaman web</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        #bungkus {
+          font-family: Montserrat, sans-serif;
+          line-height: 20px;
+          margin: 0 auto;
+          width: 70%;
+          box-shadow: 6px 6px 5px 10px #666666;
+        }
+
+        header {
+          font-weight: bold;
+          text-shadow: 4px 4px 3px #77f;
+          padding: 50px;
+          text-align: center;
+          background: #483d8b; /* Ubah warna background header */
+          color: white;
+        }
+
+        nav {
+          text-align: left;
+          border: 1px dotted;
+          background-color: #696969; /* Ubah warna background nav */
+          position: sticky;
+          top: 0;
+        }
+
+        nav a {
+          font-size: 18px;
+          font-weight: 400;
+          text-decoration: none;
+          color: white;
+        }
+
+        nav li {
+          display: inline;
+          list-style-type: none;
+          margin-right: 20px;
+        }
+
+        a:visited {
+          color: #32cd32; /* Ubah warna link yang telah dikunjungi */
+        }
+
+        a:hover {
+          color: #ff69b4; /* Ubah warna link saat dihover */
+        }
+
+        a:active {
+          color: #ff8c00; /* Ubah warna link saat ditekan */
+        }
+
+        p {
+          text-indent: 50px;
+        }
+
+        p::first-letter {
+          font-size: 32px;
+          font-weight: bold;
+          color: saddlebrown;
+        }
+
+        .dropdown {
+          display: inline-block;
+          color: white;
+          position: relative;
+        }
+
+        .dropdown-content {
+          display: none;
+          background-color: #2f4f4f; /* Ubah warna background dropdown content */
+          min-width: 150px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          padding: 12px 16px;
+          z-index: 1;
+          position: absolute;
+        }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        main {
+          padding: 20px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+
+        #content {
+          text-align: justify;
+          flex: 7;
+          order: 1;
+          background-color: #f8f8ff; /* Ubah warna background content */
+          padding: 20px;
+        }
+
+        aside {
+          flex: 3;
+          order: 2;
+          background-color: #add8e6; /* Ubah warna background aside */
+          padding: 20px;
+          border: solid;
+          border-radius: 10px 5px 10px 5px;
+        }
+
+        article {
+          width: 100%;
+          border: 4px solid black;
+          padding: 10px;
+          border: 4px solid black;
+          overflow: auto;
+        }
+
+        img {
+          float: left;
+          margin: 10px;
+          border-radius: 10px; /* Tambahkan border-radius untuk gambar */
+          width: 30%;
+          padding: 5px; /* Perkecil padding gambar */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan shadow untuk gambar */
+        }
+
+        .imagep {
+          width: 300px;
+          height: 320px;
+          text-align: center;
+          margin: 0px auto;
+          display: block;
+          border-radius: 10px; /* Tambahkan border-radius untuk gambar */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan shadow untuk gambar */
+          padding: 5px; /* Perkecil padding gambar */
+        }
+
+        footer {
+          padding: 20px;
+          color: white;
+          background-color: #1e90ff; /* Ubah warna background footer */
+          text-align: center;
+          font-weight: bold;
+        }
+
+        @media screen and (max-width: 600px) {
+          #bungkus {
+            width: 100%;
+          }
+          main {
+            flex-direction: column;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <div id="bungkus">
+        <header>
+          <h1>LOMBOK</h1>
+        </header>
+        <nav>
+          <ul>
+            <li><a href="#sejarah">sejarah</a></li>
+            <li><a href="#pariwisata">pariwisata</a></li>
+            <li><a href="#lokasi">lokasi</a></li>
+            <li>
+              <div class="dropdown">
+                <div class="dropdown-content">
+                  <a href="#profile"></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <main>
+          <div id="content">
+            <section>
+              <article>
+                <h3 id="sejarah">SEJARAH</h3>
+                <img src="img/foto3.jpg" alt="sejarah" />
+                <p>
+                  Sebuah pulau di kepulauan kecil atau Nusa Tenggara yang
+                  terpisah oleh selat lombok dari bali disebelah barat dan selat
+                  Alas di sebelah timur dari sumbawa. <br />
+                  Pulau ini kurang lebih berbentuk bulat semacam"ekor" disisi
+                  barat daya yang panjang nya kurang lebih 70km. luas pulau ini
+                  mencapai 5.435km menempatkannya pada peringkat ke 108 dari
+                  daftar pulau berdasarkan luasnya di dunia. Kota utama di pulau
+                  ini adalah Mataram. Lombok termasuk Nusa Tenggara Barat dan
+                  pulau ini sendiri tendiri dibagi menjadi 4 kabupaten dan 1
+                  kota. Kota Mataram kabupaten Lombok Barat kabupaten Lombok
+                  Tengah kabupaten Lombok timur kabupaten Lombok Utara Tofografi
+                  pulau ini didominasi oleh gunung berpi rinjani yang
+                  ketinggiannya mencapai 3.726 meter diatas permukaan laut dan
+                  menjadikannya ketiga tertinggi di indonesia. Pada tahun 1997
+                  kawasan danau segara Anak ditengahnya dinyatakan dilindungi
+                  oleh pemerintah. Daerah selatan pulau ini sebagian besar
+                  terdiri atas tanah yang subur yang dimanfaatkan untuk
+                  pertanian , komoditad yang biasa ditanam di daerah ini antara
+                  lain jagung, padi, kopi, tembakau,dan kapas.
+                </p>
+              </article>
+            </section>
+            <hr />
+            <br />
+
+            <section>
+              <article>
+                <h3 id="pariwisata">PARIWISATA</h3>
+                <img src="img/foto4.jpg" alt="wisata" />
+                <p>
+                  Lombok dalam banyak hal mirip dengan bali, dan pada dasawarsa
+                  tahun 1990-an mulai dikenal wisatawan mancanegara. Namun
+                  dengan munculnya krisi moneter yang melanda Indonesia pada
+                  akhir tahun 1997 dan krisis-krisis yang menyertainya, potensi
+                  wisatawan jadi terlantarkan. Lalu pada awal tahun 2000 terjadi
+                  kerusuhan antara etnis dan antar-agama dilombok sehingga
+                  terjadi pengsian besar-besaran kaum minoritas. Mereka trutama
+                  mengungsi kepulau Bali. Namun selang beberapa lama waktu
+                  situasi menjadi kondusif dan mereka kembali. Pada tahun 2007
+                  sektor pariwisata adalah satu-satunya sektor yang berkembang.
+                  Pulau lombok adalah pulau terbesar digugusan pulau di privisi
+                  NTB disini terdapat 5 wilayah administratif pemerintah. Kota
+                  Mataram, kabupaten Lombok Tengah,kabupaten Lombok Timur,
+                  kabupaten Lombok Utara,dan kabupaten Lombok Barat. Pulau ini
+                  hanya berjarak 5 jam perjalanan dengan neggunakan kapal ferri
+                  dari pulau Bali. Lombok juga disebut pulau seribu masjid,
+                  mayoritas penduduk disini beragama islam. Masjid sangan mudah
+                  ditemukan disini, jarak antara masjid hampir berdekatan.
+                  Perpaduan pariwisata sangan harmonis membuat lombok memperoleh
+                  penghargaan sebagai the word best halal dan the word best
+                  halal honeymoon 2015 didubai Uni Emirat Arab. Pulau-pulau yang
+                  kecil mengelilingi lombok disebut sebagai gili terdapat 3 gili
+                  yang menjadi favorit para wisatawan untuk melakukan aktivitas
+                  snorkeling,diving,dan memancing diantaranya gili trawangan,
+                  Gili Air dan , Gili Meno. Tidak hanya ketiga gili tersebut
+                  ,gili lainyya yang berada di gugusan kepulaun ini juga sangan
+                  menyimpan pesona indah. Pulau lombok menyimpan banyak pesona
+                  nan menarik. Mulai dari alam, budaya, hingga keagamaan.
+                  Berikut tempat-tempat wisata yang bisa dijadikan pilihan:
+                </p>
+              </article>
+            </section>
+            <hr />
+            <br />
+
+            <section>
+              <article>
+                <h3 id="lokasi">LOKASI</h3>
+                <img src="img/foto2.jpg" alt="lokasi" />
+                <p>
+                  Cakranegara (dulu bernama cakranegara) kota Mataram sekarang,
+                  dulunya ditemukan naskah lontar kuno oleh expedisi belanda
+                  (KNIL) kemudian diambil dan dibawa ke belanda, naskah lontar
+                  ini sebenarnya berada di Kerajaan Selaparang (sekarang sekitar
+                  daerah peringgabaya, Lombok Timur) tetapi pada saat peperangan
+                  di Bali dan Lombok, kerajaan selaparang telah kalah karena
+                  diserang secara tiba-tiba, dan semua harta benda milik
+                  kerajaan selaparang dirampas oleh pasukan Bali, sisa-sisanya
+                  yang tidak terbawa kemudian dibakar. Termasuk mahkota raja
+                  selaparang(pemban selaparang) dan naskah selaparang lontar
+                  Negara Kertagama yang sedang dipelajari oleh perwira kerajaan
+                  Selaparang.
+                </p>
+                <table>
+                  <tr>
+                    <td>Luas</td>
+                    <td>:</td>
+                    <td>4.739 km</td>
+                  </tr>
+                  <tr>
+                    <td>Location</td>
+                    <td>:</td>
+                    <td>Indonesia</td>
+                  </tr>
+                  <tr>
+                    <td>Population</td>
+                    <td>:</td>
+                    <td>3,832,631 (2020 Census)</td>
+                  </tr>
+                  <tr>
+                    <td>Pop.dencity</td>
+                    <td>:</td>
+                    <td>793.2 km/2 (2054.4/sqmi)</td>
+                  </tr>
+                  <tr>
+                    <td>Provinsi</td>
+                    <td>:</td>
+                    <td>Nusa Tenggara Barat</td>
+                  </tr>
+                  <tr>
+                    <td>Gugusan Pulau</td>
+                    <td>:</td>
+                    <td>Kepulauan Nusa Tenggara</td>
+                  </tr>
+                </table>
+              </article>
+            </section>
+          </div>
+
+          <aside>
+            <h3 id="profile">PROFILE DATA PERIBADI</h3>
+            <table>
+              <tr>
+                <td colspan="3">
+                  <center>
+                    <img src="img/foto1.jpg" alt="lokasi" class="imagep" />
+                  </center>
+                </td>
+              </tr>
+              <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td>Maolana alasari</td>
+              </tr>
+              <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td>paok motong</td>
+              </tr>
+              <tr>
+                <td>TTL</td>
+                <td>:</td>
+                <td>05, mei, 2004</td>
+              </tr>
+              <tr>
+                <td>Status</td>
+                <td>:</td>
+                <td>Belum Menikah</td>
+              </tr>
+            </table>
+          </aside>
+        </main>
+        <footer>
+          <h2>@tugas perangcangan web</h2>
+        </footer>
+      </div>
+    </body>
+  </html></IDOCTYPE
+>
